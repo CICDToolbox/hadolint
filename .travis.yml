@@ -1,0 +1,34 @@
+matrix:
+  include:
+  - services:
+    - docker
+    name: Ubuntu 20.04 (Focal Fossa / Focal)
+    script:
+    - "./pipeline.sh"
+  - language: ruby
+    name: YAML Linting (rvm 3.0)
+    rvm: 3.0
+    script:
+    - wget --quiet -O - https://raw.githubusercontent.com/CICDToolbox/yaml-lint/master/pipeline.sh
+      | bash
+  - language: bash
+    name: Shellcheck (Bash)
+    os: linux
+    arch: arm64-graviton2
+    script:
+    - wget --quiet -O - https://raw.githubusercontent.com/CICDToolbox/shellcheck/master/pipeline.sh
+      | bash
+  - language: ruby
+    name: Link Checking (rvm 3.0)
+    rvm: 3.0
+    env:
+    - FLAGS="default"
+    - EXCLUDE_FILES="CHANGELOG.md"
+    - WHITELIST="https://img.shields.io"
+    script:
+    - wget --quiet -O - https://raw.githubusercontent.com/CICDToolbox/awesomebot/master/pipeline.sh
+      | bash
+notifications:
+  email: false
+  slack:
+    secure: jrGay7IKBY+EbMSHUM+UwdaNjy2lQ0wCPCbAOQ072tfkELioTTx0pBeq4HU4+Er1rvuNub+qxyAiN3YGNjsLdS1e8NhaJpj1K36o7ytv3LkEfEayViGIc8aYapFkRLayt4toSLwQ3zFVqDtA6MNzCtgKCSYmH6CnLLTNpIqX7ThDFnCaNuRKm/a/Ir2BFRfq6edxk868ibrzEsTBxjqbZMUt2zmmLu6xxUXV2SspLD+/0JDlCMdc5NvSZj/rgG6XlKWDgJcoxxPEE6+U489gsL9/W62CwfxQMvSTtOHUtWFE1BjUWCujtK0UEOYmoghnGTLJVHQbvgdcC2GsR6B0I4tLFLSZONcVRKMVi6iaXABiGtck3AHMB4C6JDojS8bwCCQJaTEtlGdw8VmhWEHpFC5sxX81NQHDp+QfZ0f8xx1vwNgkbwJADlvfvU+pyf8PrO1FCBTnLnMutRIKTpVOk0JPwRZlPQrGTUAe0VUjNkAhjjhFfF8UTam5W5nf5nBBiiUZCQ0074IL9DuCpy0CWNCSHUCilcxLyJ1jQItjdq8rlKVr7pGutGWrqlgcZ3d1Vf5DsgCW5eR1OvLKaeCzsOHFbwGf4o3JtHrwdOc55H2NqQQEfr3N3f/jalrIwMnsPukRZcr+mgLbUo/wXfsxynBNvtxGTUzJgrxrLpkg/kQ=
