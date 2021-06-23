@@ -106,7 +106,6 @@ function handle_parameters
     else
         REPORT_ONLY=false
     fi
-    draw_line
 
     if [[ "${REPORT_ONLY}" == true ]]; then
         center_text "WARNING: REPORT ONLY MODE"
