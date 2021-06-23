@@ -3,7 +3,7 @@ on: [push, pull_request]
     
 jobs:
   local-test:
-    name: Run Hadolint
+    name: Build Test on hadolint/latest
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
