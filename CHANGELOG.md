@@ -7,5 +7,7 @@ This changelog was automatically generated using [Caretaker](https://github.com/
 
 ### [Unreleased](https://github.com/CICDToolbox/hadolint/commits/master)
 
-- The initial commit [`[head]`](https://github.com/CICDToolbox/hadolint/commit/)
+- testing [`[head]`](https://github.com/CICDToolbox/hadolint/commit/)
+
+- The initial commit [`[9cdca3e]`](https://github.com/CICDToolbox/hadolint/commit/9cdca3e06923d43fda536302771011c81772d45c)
 
