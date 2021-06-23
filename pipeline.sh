@@ -40,7 +40,7 @@ function install_prerequisites
     docker pull --quiet "${INSTALL_PACKAGE}"
 
     VERSION='latest'
-    BANNER="Scanning all docker containers with ${container} (version: ${VERSION})"
+    BANNER="Scanning all docker containers with ${INSTALL_PACKAGE} (version: ${VERSION})"
 }
 
 # -------------------------------------------------------------------------------- #
