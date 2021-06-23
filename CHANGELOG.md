@@ -9,6 +9,8 @@ This changelog was automatically generated using [Caretaker](https://github.com/
 
 - testing [`[head]`](https://github.com/CICDToolbox/hadolint/commit/)
 
+- testing [`[ef6d112]`](https://github.com/CICDToolbox/hadolint/commit/ef6d112891bd9bcd0d6290787c625835f5b4adbb)
+
 - testing [`[85042f7]`](https://github.com/CICDToolbox/hadolint/commit/85042f7677f800df5cce6bacfc3a57897cd24792)
 
 - testing [`[e5e3058]`](https://github.com/CICDToolbox/hadolint/commit/e5e30581e162e551f911744732636c04c40c787f)
