@@ -1,17 +1,10 @@
-<h1 align="center">
+<p align="center">
     <a href="https://github.com/WolfSoftware">
         <img src="https://raw.githubusercontent.com/WolfSoftware/branding/master/images/general/banners/64/black-and-white.png" alt="Wolf Software Logo" />
     </a>
     <br />
-    Hadolint for CI/CD Pipelines
-</h1>
-
-<p align="center">
     <a href="https://github.com/CICDToolbox/hadolint/actions/workflows/pipeline.yml">
         <img src="https://img.shields.io/github/workflow/status/CICDToolbox/hadolint/pipeline/master?logo=github&logoColor=white&style=for-the-badge" alt="Github Build Status">
-    </a>
-    <a href="https://travis-ci.com/CICDToolbox/hadolint">
-        <img src="https://img.shields.io/travis/com/CICDToolbox/hadolint/master?style=for-the-badge&logo=travis" alt="Travis Build Status">
     </a>
     <a href="https://github.com/CICDToolbox/hadolint/releases/latest">
         <img src="https://img.shields.io/github/v/release/CICDToolbox/hadolint?color=blue&style=for-the-badge&logo=github&logoColor=white&label=Latest%20Release" alt="Release">
@@ -32,21 +25,15 @@
     <a href="https://github.com/CICDToolbox/hadolint/issues">
         <img src="https://img.shields.io/badge/Get%20Support-blue?style=for-the-badge&logo=read-the-docs&logoColor=white" />
     </a>
-    <br />
-    <a href="https://github.com/TGWolf">
-        <img src="https://img.shields.io/badge/Created%20by%20Wolf-black?style=for-the-badge" />
-    </a>
 </p>
 
 ## Overview
 
 A tool to lint your Dockerfiles in CI/CD pipelines using [hadolint](https://github.com/hadolint/hadolint).
 
-This tool has been written and tested using both GitHub Actions and Travis CI, but it should work out of the box with a lot of other CI/CD tools.
+This tool has been written and tested using GitHub Actions but it should work out of the box with a lot of other CI/CD tools.
 
 ## Usage
-
-### GitHub Actions
 
 ```yml
 on: [push, pull_request]
@@ -56,15 +43,6 @@ jobs:
     runs-on: ubuntu-latest
     - name: Run Hadolint
       run: wget --quiet -O - https://raw.githubusercontent.com/CICDToolbox/hadolint/master/pipeline.sh | bash
-```
-
-### Travis CI
-
-```yml
-- services:
-  - docker
-  script:
-  - wget --quiet -O - https://raw.githubusercontent.com/CICDToolbox/yaml-lint/master/pipeline.sh | bash
 ```
 
 ### Other Options
@@ -78,8 +56,6 @@ The following environment variables can be set in order to customise the script.
 
 You can use any combination of the above settings.
 
-#### GitHub Actions
-
 ```yml
 on: [push, pull_request]
 
@@ -91,20 +67,6 @@ jobs:
         REPORT_ONLY: true
         SHOW_ERRORS: true
       run: wget --quiet -O - https://raw.githubusercontent.com/CICDToolbox/hadolint/master/pipeline.sh | bash
-```
-
-#### Travis CI
-
-```yml
-- services:
-  - docker
-
-env:
-  - REPORT_ONLY=true
-  - SHOW_ERRORS=true
-
-script:
-  - wget --quiet -O - https://raw.githubusercontent.com/CICDToolbox/yaml-lint/master/pipeline.sh | bash
 ```
 
 ## Example Output
@@ -130,10 +92,12 @@ Target files are identified using the following code:
 ```
 > There is not magic type for Dockerfiles files so file -b is of not use for identifying the files.
 
-## Show Support
-
-<p>
-	<a href="https://ko-fi.com/wolfsoftware">
-		<img src="https://img.shields.io/badge/Ko%20Fi-blue?style=for-the-badge&logo=ko-fi&logoColor=white" />
-	</a>
+<p align="right">
+    <a href="https://github.com/TGWolf">
+        <img src="https://img.shields.io/badge/Created%20by%20Wolf-black?style=for-the-badge" />
+    </a>
+    <br />
+    <a href="https://ko-fi.com/wolfsoftware">
+        <img src="https://img.shields.io/badge/Ko%20Fi-black?style=for-the-badge&logo=ko-fi&logoColor=white" />
+    </a>
 </p>
