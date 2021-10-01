@@ -49,10 +49,12 @@ jobs:
 
 The following environment variables can be set in order to customise the script.
 
-| Name          | Purpose |
-| ------------- | ------- |
-| REPORT_ONLY   | Generate the report but do not fail the build even if an error occurred. |
-| SHOW_ERRORS   | Show the actual errors instead of just which files had errors. |
+| Name          | Purpose | Default Value |
+| ------------- | ------- | ------------- |
+| EXCLUDE_FILES | A comma separated list of files to exclude from being scanned. | Unset |
+| EXIT_ON_INSTALL_FAILURE | Exit the script if the install of the prerequisites fails (they might already exist). | False |
+| REPORT_ONLY   | Generate the report but do not fail the build even if an error occurred. | False | 
+| SHOW_ERRORS   | Show the actual errors instead of just which files had errors. | False | 
 
 You can use any combination of the above settings.
 
