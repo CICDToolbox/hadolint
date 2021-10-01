@@ -68,7 +68,7 @@ jobs:
       env:
         REPORT_ONLY: true
         SHOW_ERRORS: true
-      run: wget --quiet -O - https://raw.githubusercontent.com/CICDToolbox/hadolint/master/pipeline.sh | bash
+      run: bash <(curl -s https://raw.githubusercontent.com/CICDToolbox/hadolint/master/pipeline.sh)
 ```
 
 ## Example Output
