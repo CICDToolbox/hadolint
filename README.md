@@ -7,7 +7,7 @@
         <img src="https://img.shields.io/github/workflow/status/CICDToolbox/hadolint/pipeline/master?style=for-the-badge" alt="Github Build Status">
     </a>
     <a href="https://github.com/CICDToolbox/hadolint/releases/latest">
-        <img src="https://img.shields.io/github/v/release/CICDToolbox/hadolint?color=blue&label=Latest%20Release?style=for-the-badge" alt="Release">
+        <img src="https://img.shields.io/github/v/release/CICDToolbox/hadolint?color=blue&label=Latest%20Release&style=for-the-badge" alt="Release">
     </a>
     <a href="https://github.com/CICDToolbox/hadolint/releases/latest">
         <img src="https://img.shields.io/github/commits-since/CICDToolbox/hadolint/latest.svg?color=blue&style=for-the-badge" alt="Commits since release">
