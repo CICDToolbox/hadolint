@@ -7,7 +7,9 @@ This changelog was automatically generated using [Caretaker](https://github.com/
 
 ### [Unreleased](https://github.com/CICDToolbox/hadolint/commits/master)
 
-- Move logo to cdn [`[head]`](https://github.com/CICDToolbox/hadolint/commit/)
+- update [`[head]`](https://github.com/CICDToolbox/hadolint/commit/)
+
+- Move logo to cdn [`[ff29644]`](https://github.com/CICDToolbox/hadolint/commit/ff29644915d54bc059433891ba56b0dfa068fd92)
 
 - update [`[4c58000]`](https://github.com/CICDToolbox/hadolint/commit/4c58000709107a3af0a079a3b882fbea8b901296)
 

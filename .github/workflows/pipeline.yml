@@ -2,12 +2,12 @@ name: pipeline
 on: [push, pull_request]
     
 jobs:
-  local-test:
+  build-testing:
     name: Build Test on hadolint/latest
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Local Run Test
+      - name: Run Haodlint
         run: ./pipeline.sh
   awesomebot:
     name: Awesomebot
@@ -46,7 +46,7 @@ jobs:
     if: always()
     name: Slack Post Workflow Notification
     needs:
-      - local-test
+      - build-testing
       - awesomebot
       - shellcheck
       - yaml-lint
