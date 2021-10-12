@@ -17,7 +17,7 @@ set -Eeuo pipefail
 # -------------------------------------------------------------------------------- #
 # Global Variables                                                                 #
 # -------------------------------------------------------------------------------- #
-# INSTALL_PACKAGE - The name of the package to install.                            #
+# DOCKER_CONTAINER - The name of the docker container to pull down.                #
 # INSTALL_COMMAND - The command to execute to do the install.                      #
 # TEST_COMMAND - The command to execute to perform the test.                       #
 # FILE_TYPE_SEARCH_PATTERN - The pattern used to match file types.                 #
@@ -26,10 +26,10 @@ set -Eeuo pipefail
 # CURRENT_STAGE - The current stage used for the reporting output.                 #
 # -------------------------------------------------------------------------------- #
 
-INSTALL_PACKAGE='hadolint/hadolint'
-INSTALL_COMMAND="docker pull --quiet ${INSTALL_PACKAGE}"
+DOCKER_CONTAINER='hadolint/hadolint'
+INSTALL_COMMAND="docker pull --quiet ${DOCKER_CONTAINER}"
 
-TEST_COMMAND="docker run --rm -i ${INSTALL_PACKAGE}"
+TEST_COMMAND="docker run --rm -i ${DOCKER_CONTAINER}"
 FILE_TYPE_SEARCH_PATTERN='No Magic Text'
 FILE_NAME_SEARCH_PATTERN='Dockerfile$'
 
@@ -66,7 +66,7 @@ function install_prerequisites
 function get_version_information
 {
     VERSION='latest'
-    BANNER="Run ${INSTALL_PACKAGE} (${VERSION})"
+    BANNER="Run ${DOCKER_CONTAINER} (${VERSION})"
 }
 
 # -------------------------------------------------------------------------------- #
