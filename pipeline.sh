@@ -26,8 +26,7 @@ set -Eeuo pipefail
 # CURRENT_STAGE - The current stage used for the reporting output.                 #
 # -------------------------------------------------------------------------------- #
 
-#INSTALL_PACKAGE='hadolint/hadolint'
-INSTALL_PACKAGE='elfkhgjkfjhgkjdfshgjhdfghsehgjhsdfgjkhdfsjgh'
+INSTALL_PACKAGE='hadolint/hadolint'
 INSTALL_COMMAND="docker pull --quiet ${INSTALL_PACKAGE}"
 
 TEST_COMMAND="docker run --rm -i ${INSTALL_PACKAGE}"
