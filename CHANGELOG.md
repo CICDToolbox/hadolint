@@ -9,6 +9,8 @@ This changelog was automatically generated using [Caretaker](https://github.com/
 
 - New logo [`[head]`](https://github.com/CICDToolbox/hadolint/commit/)
 
+- New logo [`[997a96e]`](https://github.com/CICDToolbox/hadolint/commit/997a96ed189ccae3fd61d8281b62bb8dbd3767a5)
+
 - New logo [`[ee6fa3b]`](https://github.com/CICDToolbox/hadolint/commit/ee6fa3bdbea0e613489e0630d9a1e30e7e1b3bec)
 
 - New logo [`[002df04]`](https://github.com/CICDToolbox/hadolint/commit/002df0400745a5bc338b04cb597cf530029362cb)

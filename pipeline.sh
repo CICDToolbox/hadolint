@@ -17,8 +17,10 @@ set -Eeuo pipefail
 # -------------------------------------------------------------------------------- #
 # Global Variables                                                                 #
 # -------------------------------------------------------------------------------- #
-# DOCKER_CONTAINER - The name of the docker container to pull down.                #
+# DOCKER_CONTAINER - The docker container to use.                                  #
+# DOCKER_CONTAINER_SHORT - Short name for version banner.                          #
 # INSTALL_COMMAND - The command to execute to do the install.                      #
+# VERSION_COMMAND - What to run to get the version out of the container.           #
 # TEST_COMMAND - The command to execute to perform the test.                       #
 # FILE_TYPE_SEARCH_PATTERN - The pattern used to match file types.                 #
 # FILE_NAME_SEARCH_PATTERN - The pattern used to match file names.                 #
@@ -27,9 +29,13 @@ set -Eeuo pipefail
 # -------------------------------------------------------------------------------- #
 
 DOCKER_CONTAINER='hadolint/hadolint'
+DOCKER_CONTAINER_SHORT='hadolint'
+
 INSTALL_COMMAND="docker pull --quiet ${DOCKER_CONTAINER}"
+VERSION_COMMAND="docker run ${DOCKER_CONTAINER} hadolint"
 
 TEST_COMMAND="docker run --rm -i ${DOCKER_CONTAINER}"
+
 FILE_TYPE_SEARCH_PATTERN='No Magic Text'
 FILE_NAME_SEARCH_PATTERN='Dockerfile$'
 
@@ -65,8 +71,8 @@ function install_prerequisites
 
 function get_version_information
 {
-    VERSION='latest'
-    BANNER="Run ${DOCKER_CONTAINER} (${VERSION})"
+    VERSION=$(${VERSION_COMMAND} --version | sed 's/[^0-9.]*\([0-9.]*\).*/\1/')
+    BANNER="Run ${DOCKER_CONTAINER_SHORT} (${VERSION})"
 }
 
 # -------------------------------------------------------------------------------- #
