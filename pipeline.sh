@@ -134,7 +134,7 @@ function scan_files()
                 check "${filename}"
             fi
         fi
-    done < <(find -- * -type f | sort -zVd)
+    done < <(find . -type f | sed 's|^./||' | sort -zVd)
 }
 
 # -------------------------------------------------------------------------------- #

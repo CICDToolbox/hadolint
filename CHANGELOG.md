@@ -7,7 +7,9 @@ This changelog was automatically generated using [Caretaker](https://github.com/
 
 ### [Unreleased](https://github.com/CICDToolbox/hadolint/commits/master)
 
-- shellcheck [`[head]`](https://github.com/CICDToolbox/hadolint/commit/)
+- Fix find command [`[head]`](https://github.com/CICDToolbox/hadolint/commit/)
+
+- shellcheck [`[73a0a31]`](https://github.com/CICDToolbox/hadolint/commit/73a0a318fa73cf4db61909bbdda7c7b283c02e5a)
 
 - Dont use git ls-files [`[ff06544]`](https://github.com/CICDToolbox/hadolint/commit/ff065446584154a7535c233ac8b0b0faa0ae1632)
 
