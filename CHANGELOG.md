@@ -9,6 +9,8 @@ This changelog was automatically generated using [Caretaker](https://github.com/
 
 - Fix find command [`[head]`](https://github.com/CICDToolbox/hadolint/commit/)
 
+- Fix find command [`[7b616ac]`](https://github.com/CICDToolbox/hadolint/commit/7b616ac2a33d497c745fa887cae5ee2f420ebc09)
+
 - shellcheck [`[73a0a31]`](https://github.com/CICDToolbox/hadolint/commit/73a0a318fa73cf4db61909bbdda7c7b283c02e5a)
 
 - Dont use git ls-files [`[ff06544]`](https://github.com/CICDToolbox/hadolint/commit/ff065446584154a7535c233ac8b0b0faa0ae1632)
