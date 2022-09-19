@@ -157,12 +157,12 @@ function handle_parameters
         REPORT_ONLY=false
     fi
 
-    if [[ -n "${SHOW_ERRORS-}" ]] && [[ "${SHOW_ERRORS}" = true ]]; then
-        SHOW_ERRORS=true
-        echo " Show Errors: true"
+    if [[ -n "${SHOW_ERRORS-}" ]] && [[ "${SHOW_ERRORS}" = false ]]; then
+        SHOW_ERRORS=false
+        echo " Show Errors: false"
         parameters=true
     else
-        SHOW_ERRORS=false
+        SHOW_ERRORS=true
     fi
 
     if [[ -n "${EXCLUDE_FILES-}" ]]; then

@@ -7,7 +7,9 @@ This changelog was automatically generated using [Caretaker](https://github.com/
 
 ### [Unreleased](https://github.com/CICDToolbox/hadolint/commits/master)
 
-- Fix find command [`[head]`](https://github.com/CICDToolbox/hadolint/commit/)
+- Make errors easier to see and default to showing errors [`[head]`](https://github.com/CICDToolbox/hadolint/commit/)
+
+- Fix find command [`[a2a010a]`](https://github.com/CICDToolbox/hadolint/commit/a2a010aeb979a8b2422e4dc89f8399f04afc092c)
 
 - Fix find command [`[7ffee32]`](https://github.com/CICDToolbox/hadolint/commit/7ffee3232cf5b33a4ee626bd91f7da50f3e657fd)
 
