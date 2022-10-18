@@ -7,7 +7,9 @@ This changelog was automatically generated using [Caretaker](https://github.com/
 
 ### [Unreleased](https://github.com/CICDToolbox/hadolint/commits/master)
 
-- Make errors easier to see and default to showing errors [`[head]`](https://github.com/CICDToolbox/hadolint/commit/)
+- Change the logic for skipping and showing skipped files [`[head]`](https://github.com/CICDToolbox/hadolint/commit/)
+
+- Make errors easier to see and default to showing errors [`[444c789]`](https://github.com/CICDToolbox/hadolint/commit/444c7890be9559ecc01f1a841d0187707455fed0)
 
 - Fix find command [`[a2a010a]`](https://github.com/CICDToolbox/hadolint/commit/a2a010aeb979a8b2422e4dc89f8399f04afc092c)
 
